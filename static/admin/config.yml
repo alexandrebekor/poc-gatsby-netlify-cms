@@ -1,25 +1,32 @@
 backend:
-  name: git-gateway
+  name: github
   branch: main # Branch to update (optional; defaults to master)
+  repo: alexandrebekor/poc-gatsby-netlify-cms
 
-# local_backend: true
-# publish_mode: editorial_workflow
 media_folder: static/img
 public_folder: /img
 
 collections:
-  - name: "blog"
-    label: "Blog"
-    folder: "content/blog"
+  - name: "author"
+    label: "Autores"
+    folder: "./src/content/author"
     create: true
-    slug: "index"
-    media_folder: ""
-    public_folder: ""
-    path: "{{title}}/index"
-    editor:
-      preview: false
+    slug: "{{slug}}"
+    path: "{{slug}}/index"
     fields:
-      - { label: "Title", name: "title", widget: "string" }
-      - { label: "Publish Date", name: "date", widget: "datetime" }
-      - { label: "Description", name: "description", widget: "string" }
-      - { label: "Body", name: "body", widget: "markdown" }
+      - { label: "Nome", name: "title", widget: "string" }
+      - { label: "Avatar", name: "avatar", widget: "image" }
+      - { label: "Bio", name: "body", widget: "markdown" }
+
+collections:
+  - name: "post"
+    label: "Posts"
+    folder: "./src/content/post"
+    create: true
+    slug: "{{slug}}"
+    path: "{{slug}}/index"
+    fields:
+      - { label: "Título", name: "title", widget: "string" }
+      - { label: "Thumbnail", name: "thumb", widget: "image" }
+      - { label: "Descrição", name: "description", widget: "string" }
+      - { label: "Conteúdo", name: "body", widget: "markdown" }

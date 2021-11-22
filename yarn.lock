@@ -3599,7 +3599,7 @@ create-gatsby@^2.2.0:
   dependencies:
     "@babel/runtime" "^7.15.4"
 
-create-react-class@^15.5.1:
+create-react-class@^15.5.1, create-react-class@^15.7.0:
   version "15.7.0"
   resolved "https://registry.yarnpkg.com/create-react-class/-/create-react-class-15.7.0.tgz#7499d7ca2e69bb51d13faf59bd04f0c65a1d6c1e"
   integrity sha512-QZv4sFWG9S5RUvkTYWbflxeZX+JG7Cz0Tn33rQBJ+WFQTqTfUTjMjiv9tnfXazjsO5r0KhPs+AqCjyrQX6h2ng==
@@ -4364,7 +4364,7 @@ escape-goat@^2.0.0:
   resolved "https://registry.yarnpkg.com/escape-goat/-/escape-goat-2.1.1.tgz#1b2dc77003676c457ec760b2dc68edb648188675"
   integrity sha512-8/uIhbG12Csjy2JEW7D9pHbreaVaS/OpN3ycnyvElTdwM5n6GY6W6e2IPemfvGZeUMqZ9A/3GqIZMgKnBhAw/Q==
 
-escape-html@~1.0.3:
+escape-html@^1.0.3, escape-html@~1.0.3:
   version "1.0.3"
   resolved "https://registry.yarnpkg.com/escape-html/-/escape-html-1.0.3.tgz#0258eae4d3d0c0974de1c169188ef0051d1d1988"
   integrity sha1-Aljq5NPQwJdN4cFpGI7wBR0dGYg=
@@ -6886,6 +6886,11 @@ joi@^17.4.2:
     "@sideway/formula" "^3.0.0"
     "@sideway/pinpoint" "^2.0.0"
 
+jquery@^3.6.0:
+  version "3.6.0"
+  resolved "https://registry.yarnpkg.com/jquery/-/jquery-3.6.0.tgz#c72a09f15c1bdce142f49dbf1170bdf8adac2470"
+  integrity sha512-JVzAR/AjBvVt2BmYhxRCSYysDsPcssdmTFnzyLEts9qNwmjmu4JTAMYubEfwVOSwpQ1I1sKKFcxhZCI2buerfw==
+
 js-base64@^3.0.0:
   version "3.7.2"
   resolved "https://registry.yarnpkg.com/js-base64/-/js-base64-3.7.2.tgz#816d11d81a8aff241603d19ce5761e13e41d7745"
@@ -8471,6 +8476,19 @@ netlify-cms-locales@^1.38.0:
   resolved "https://registry.yarnpkg.com/netlify-cms-locales/-/netlify-cms-locales-1.38.0.tgz#df3321edbb4f841a30d024d53fe693a81bc0f1b5"
   integrity sha512-w7EL3qzOaWfcF2o+pqaeMoRO/z4/MVchh36FQT+QumKiXwuzT15US9MFJ99xca4ejnaswrW8M6rliHr46UVuYA==
 
+netlify-cms-media-library-cloudinary@^1.3.10:
+  version "1.3.10"
+  resolved "https://registry.yarnpkg.com/netlify-cms-media-library-cloudinary/-/netlify-cms-media-library-cloudinary-1.3.10.tgz#562f35a6a636b9b0d812ebdf6dc8957548083b57"
+  integrity sha512-F9ccWD4+3uEYoGHaO+abqBDfhITw3MA2Tsz1LwtVxdp8ExMCrZxhLrR1VPetUlOLe5BxuZD+WOA3cvRnj3rRwA==
+
+netlify-cms-media-library-uploadcare@^0.5.10:
+  version "0.5.10"
+  resolved "https://registry.yarnpkg.com/netlify-cms-media-library-uploadcare/-/netlify-cms-media-library-uploadcare-0.5.10.tgz#0a27a8687d20199ee177f2defdbe8e438515ae06"
+  integrity sha512-jAkxWepjRkQujuLM2z2ix+njSdiQxzzabmVXegpPH6ZLVGNepYVvjAsHMMpFCJAb1EPbdHuEn69ajsJDq+52CQ==
+  dependencies:
+    uploadcare-widget "^3.7.0"
+    uploadcare-widget-tab-effects "^1.4.0"
+
 netlify-cms-ui-default@^2.15.3:
   version "2.15.3"
   resolved "https://registry.yarnpkg.com/netlify-cms-ui-default/-/netlify-cms-ui-default-2.15.3.tgz#d40a83cabcd956515dfee0c92f828fb4d2c64d75"
@@ -8604,6 +8622,19 @@ netlify-cms-widget-text@^2.4.1:
   integrity sha512-fFuHtID0GfjFwugEyQmHld2nKFe8p42NnvXsayneldcl1YL2jIOk1oastJV1sRx1FB7BIyj1WzJWoaWXNMWwng==
   dependencies:
     react-textarea-autosize "^8.0.0"
+
+netlify-cms@^2.10.179:
+  version "2.10.179"
+  resolved "https://registry.yarnpkg.com/netlify-cms/-/netlify-cms-2.10.179.tgz#a2faf740dd689e472a9714e557483a2effe91c47"
+  integrity sha512-ykZCC0QxPUzkmLgAy7hMNjzNVIhnOr9/zUeyFvvl4QzVuYR9Qgq8fct0MgHZ8thKI8TPbTdB7eaHvtRBRxUfpg==
+  dependencies:
+    codemirror "^5.46.0"
+    create-react-class "^15.7.0"
+    netlify-cms-app "^2.15.59"
+    netlify-cms-media-library-cloudinary "^1.3.10"
+    netlify-cms-media-library-uploadcare "^0.5.10"
+    react "^16.8.4"
+    react-dom "^16.8.4"
 
 netlify-identity-widget@^1.9.2:
   version "1.9.2"
@@ -12125,6 +12156,19 @@ update-notifier@^5.1.0:
     semver "^7.3.4"
     semver-diff "^3.1.1"
     xdg-basedir "^4.0.0"
+
+uploadcare-widget-tab-effects@^1.4.0:
+  version "1.5.0"
+  resolved "https://registry.yarnpkg.com/uploadcare-widget-tab-effects/-/uploadcare-widget-tab-effects-1.5.0.tgz#b320fbf22c583bb3566da65549dcb6ace7caf6ac"
+  integrity sha512-HSqtidqATXC/LjkvBmIFp1Nn69r0rmJ1fGmKYHZN5WX3jqaTi2XgofrXPX7GMY6PX7z3sk8y4Edv2UoA5uuJJw==
+
+uploadcare-widget@^3.7.0:
+  version "3.14.0"
+  resolved "https://registry.yarnpkg.com/uploadcare-widget/-/uploadcare-widget-3.14.0.tgz#7f41462a7397c4533fcbe6d5c63aa35f809d8f46"
+  integrity sha512-ppP4hvBV9AO1ZcqiVDW3W8fAtkH6j3ROHocRT9FnASURI9mGuOcVKo5l3xvzXT6kOkYCfpiDT8aOWZfQDlgpow==
+  dependencies:
+    escape-html "^1.0.3"
+    jquery "^3.6.0"
 
 uri-js@^4.2.2:
   version "4.4.1"
