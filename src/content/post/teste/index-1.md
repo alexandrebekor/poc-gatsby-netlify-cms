@@ -7,6 +7,7 @@ Testando todo o bloco de conteúdo
 
 ```javascript
 const teste = "hello"
+const testando = "novamente"
 ```
 
 Agora vamos ver
